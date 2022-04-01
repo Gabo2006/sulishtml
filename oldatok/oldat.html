@@ -8,6 +8,17 @@
 </head>
 
 <body>
+	<script>
+		function szamol()
+		{
+			let anyag=document.getElementById("oldottAnyag").value;*1
+			let anyag=document.getElementById("oldószer").value;*1
+			let eredmeny=(anyga / (anyag+szer))*100
+			document.getElementsById("megoldas").innerHTML=(anyag/(anyag+szer))*100
+			
+			
+		}
+	</script>
 	<div id="tartalom">
 		<h1>Oldat</h1>
 		<p>A többkomponensű, homogén, vagy inhomogén rendszereket összefoglaló néven elegyeknek nevezzük.</p>
@@ -32,8 +43,8 @@
 
 
 		<h2>Feladat</h2>
-		<p>Hány tömegszázalékos az az oldat, amelyben <input type="number" min="0"> sót feloldunk <input type="number" min="0"> g vízben?</p>
-		<input type="button" value="számol">
+		<p>Hány tömegszázalékos az az oldat, amelyben <input type="number" min="0" id="oldottAnyag"> sót feloldunk <input type="number" min="0" id="oldószer"> g vízben?</p>
+		<input type="button" value="szamol" onclick="szamol()">
 		<p>Eredmény: <span id="megoldas">?</span> m/m%</p>
 
 

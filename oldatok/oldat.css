@@ -1,6 +1,7 @@
 body {
 	background-size: cover;
 	font-family: sans-serif;
+	background-image: url(minta.jpg);
 }
 
 #tartalom {
@@ -10,15 +11,21 @@ body {
 
 h1 {
 	border-bottom: 8px dashed teal;
+	font-variant: small-caps;
+	letter-spacing: 3pt;
 }
 
 p,
 li {
 	text-align: justify;
+	list-style: url(lombik.png);
+
 }
 
 #kep {
 	border: 10px outset teal;
+	float: right;
+	margin-left: 15px;
 }
 
 #keplet {
@@ -42,14 +49,22 @@ input {
 
 #megoldas {
 	font-weight: bold;	
+	color: teal;
+	padding: 5px;
 }
 
 #forras {
 	font-weight:bold;
+	text-align: right;
+	font-style: italic;
 }
 
 a {
 	text-decoration: none;
 	color: black;
 	text-shadow: 1px 1px 0px white;
+}
+.oldat{
+	font-weight: bold;
+	text-decoration: underline;
 }
