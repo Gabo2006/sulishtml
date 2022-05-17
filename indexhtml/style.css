@@ -44,7 +44,20 @@ footer{ background-color: darkblue;}
 /* monitor */
 @media only screen and ( min-width:1200px)
 {
+  
+    #grid-container
+    {
+        width: 1200px;
+        grid-template-columns: 25% 55% 20%;
+        margin: auto;
+    }
     footer{ background-color: limegreen;}
+    
+    header { grid-column: 1 / 4;}
+    nav { grid-column: 1;}
+    .jobbsav{ grid-column: 3;}
+    .tartalom{ grid-column: 2;}
+    footer{ grid-column: 1/4;}
 }
 
 
