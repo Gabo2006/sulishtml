@@ -66,6 +66,16 @@ footer{
     padding-top: 15px;
 }
 
+.tartalom{
+    padding: 15px;
+}
+
+.tartalom h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-variant: small-caps;
+}
+
 
 
 
