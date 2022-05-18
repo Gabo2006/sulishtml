@@ -1,19 +1,70 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+
+body{
+    margin: 0%;
+}
+
 header{
     height: 100px;
     padding: 20px;
     text-align: right;
+    background-image: url("images/erdely.jpg.jfif");
+    background-position-y: bottom;
+    color: brown;
+}
+
+nav{
+    color: burlywood;
+    padding-left: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+nav ul{
+    padding: 0%;
+    
+}
+
+nav a:hover li{
+    color: black;
+}
+
+.infobox{
+    background-color: cyan;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+}
+
+.infobox h3{
+    margin: 0%;
+    text-align: center;
+    background-color: darkred;
+    border-bottom: px solid dimgrey;
 }
 
 header{ background-color: rgb(187, 14, 187);}
-nav{ background-color: darkred;}
-.jobbsav{ background-color: black;}
+nav{ background-color: rgb(38, 68, 139);}
+.jobbsav{background-color: chocolate;}
 .tartalom{ background-color: chartreuse;}
 footer{ background-color: darkblue;}
 
-
+footer{
+    text-align: center;
+    min-height: 50px;
+    padding-top: 15px;
+}
 
 
 
