@@ -1,0 +1,139 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body{
+    margin: 0%;
+}
+
+header{
+    height: 100px;
+    padding: 20px;
+    text-align: right;
+    background-image: url("images/kep1.jpg");
+    background-position-y: bottom;
+    color: cornsilk;
+}
+
+nav{
+    color: burlywood;
+    padding-left: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    list-style-type: none;
+    padding: 10px;
+    
+}
+nav ul{
+    padding: 0%;
+    
+}
+
+nav a:hover li{
+    color: black;
+}
+
+.infobox{
+    background-color: cyan;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+}
+
+.infobox h3{
+    margin: 0%;
+    text-align: center;
+    background-color: darkred;
+    border-bottom: px solid dimgrey;
+}
+
+header{ background-color: rgb(187, 14, 187);}
+nav{ background-color: rgb(38, 68, 139);}
+.jobbsav{background-color: chocolate;}
+.tartalom{ background-color: chartreuse;}
+footer{ background-color: darkblue;}
+
+footer{
+    text-align: center;
+    min-height: 50px;
+    padding-top: 15px;
+}
+
+.tartalom{
+    padding: 15px;
+}
+
+.tartalom h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.tartalom picture{
+    max-width: 10%;
+    
+}
+
+
+
+
+
+
+
+#grid-container{
+     display: grid;
+     grid-template-columns: auto;
+}
+
+/* mobil */
+
+
+
+
+
+/* tablet */
+@media only screen and ( min-width:600px)
+{
+    footer{ background-color: gold;}
+    
+    #grid-container
+    {
+        grid-template-columns: 25% 75%;
+    }
+
+    header { grid-column: 1 / 3;}
+    nav { grid-column: 1;}
+    .jobbsav{ grid-column: 1;}
+    .tartalom{ grid-column: 2; grid-row: 2/4;}
+    footer{ grid-column: 1/3;}
+}
+
+
+
+/* monitor */
+@media only screen and ( min-width:1200px)
+{
+  
+    #grid-container
+    {
+        width: 1200px;
+        grid-template-columns: 25% 55% 20%;
+        margin: auto;
+    }
+    footer{ background-color: limegreen;}
+    
+    header { grid-column: 1 / 4;}
+    nav { grid-column: 1;}
+    .jobbsav{ grid-column: 3;}
+    .tartalom{ grid-column: 2;}
+    footer{ grid-column: 1/4;}
+}
+
+
