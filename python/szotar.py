@@ -39,7 +39,7 @@ def beolvas():
 def kerdez():
     #random.seed(2)
     valasztott=random.choice(kerdesek)
-    print("valasztott",valasztott)
+    #print("valasztott",valasztott)
     rossz=[]
     for i in range(3):
         temp=random.choice(kerdesek)
@@ -94,25 +94,32 @@ def menu():
         print("2: feleltetes")
         print("0: kilepes")
         beker=input("valasz: ")
-        
+
+        if beker=="1":
+            #adatbekeres
+            szavak=sokbeker()
+            filebair(szavak)
+        elif beker=="2":
+            #feleltetés   
+            beolvas()
+            lil_A=[]
+            for i in range(10):
+                lil_A.append(kerdez())
+
+            #print(lil_A)
+
+            print("Az eredmeny: {:.0%}".format(lil_A.count(True)/len(lil_A)))
+
+
+            
+            
+               
+     
     
 menu()
     
-#feleltetés   
-#beolvas()
-#lil_A=[]
-#for i in range(10):
-    #lil_A.append(kerdez())
-
-#print(lil_A)
-
-#print("Az eredmeny: {:.0%}".format(lil_A.count(True)/len(lil_A)))
-
 
 
     
 
-#adatbekeres
-#szavak=sokbeker
-#filebair(szavak)
-    
+
