@@ -46,5 +46,36 @@ else:
 #print(ado("c",120))
 hazakA=[e for e in hazak if e[3]=="A"]
 
+hazaB=[]
+for e in hazak:
+    if e[3]=="B":
+        hazakB.append(e)  #ez a tobbsoros megoldas
+
+hazakC=[e for e in hazak if e[3]=="c"]
+
+for i in range(len(hazakA)):
+    hazakA[i].append(ado(hazakA[i][3],hazakA[i][4]))
+
+for i in range(len(hazakA)):
+    hazakA[i].append(ado(hazakA[i][3],hazakA[i][4]))
+
+
+for i in range(len(hazakA)):
+    hazakA[i].append(ado(hazakA[i][3],hazakA[i][4]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
