@@ -1,12 +1,14 @@
-def oszlopvissza(hanyadik):
+def oszlopVissza(hanyadik):
     oszlop=[]
     for e in tabla:
         oszlop.append(e[hanyadik-1])
 
     return oszlop
 
+def alma(mettol,meddig):
+    oszlop=[e[mettol::meddig] for e in tabla]
 
-
+    return oszlop
 
     
 gyumolcsok=["alma","körte","szőlő","barac","dragonfruit","licsi",]
@@ -93,5 +95,16 @@ for e in tabla:
 #print(oszlop)
 print(oszlopVissza(5))
 print(oszlopVissza(10))
+
+oszlop=[e[:3] for e in tabla]
+oszlop=[e[4:7] for e in tabla]
+oszlop=[e[1::2] for e in tabla]
+oszlop=[e[3::4] for e in tabla]
+print(oszlop)
+
+print(alma(int(input("kerek egy szamot:"))))
+#print(alma(3,4))
+oszlop=[[e[2],e[6],e[0]] for e in tabla]
+print(oszlop)
 
 
