@@ -30,9 +30,24 @@ class kutya:
             else:
                 print("szia báttyaa")
             
+def __str__(self):
+    return "{}, {} ({})".format(self.nev,self.fajta,slef.kor)
+
+class kotorek(kutya):
+    def koszon(self):
+        print("{} a nevem, kutyaság a mindenem! ".format(self.nev))
+
+    def __init__(self,nev,fajta,ag,kor,szin,szemszin):
+        super().__init__(nev,fajta,ag,kor,szin)
+        self.szemszin=szemszin
+
 
 k1=kutya("Buksi","jugoszláv farkasölő",9,10,"fekete")
 k2=kutya("Tobi","nemetjuhasz",100,4,"fekete")
+
+
+
+
 
 k1.ugat()
 k1.koszon()
@@ -41,6 +56,18 @@ k2.koszon()
 
 k2.talalkozas(k1)
 k1.talalkozas(k2)
+
+kotor1=kotorek("Füles", "tacskó",10,4,"barna","zold")
+kotor1.koszon()
+k1.talalkozas(kotor1)
+print(kotor1.szemszin)
+
+print(k1.szemszin)
+
+print(k1)
+print(kotor1)
+
+
 
 """
 p1 = MyClass()
